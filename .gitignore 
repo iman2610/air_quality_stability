@@ -1,0 +1,54 @@
+# ============================================================
+#  .gitignore scientifique
+# ============================================================
+
+# --- Caches Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# --- Œufs et distributions Python ---
+*.egg-info/
+dist/
+build/
+
+# --- Contenu des répertoires de données ---
+# (l'architecture est conservée grâce aux fichiers .gitkeep)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# --- Résultats / sorties générées ---
+outputs/**
+!outputs/**/
+!outputs/**/.gitkeep
+results/**
+!results/**/
+!results/**/.gitkeep
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Checkpoints Jupyter Notebooks ---
+.ipynb_checkpoints/
+
+# --- Environnements virtuels ---
+.env
+.venv
+env/
+venv/
+
+# --- Conda (si créé localement dans le projet) ---
+.conda/
+
+# --- Couverture de tests ---
+.coverage
+htmlcov/
+.pytest_cache/git push -u origin main
+
+
+# --- Fichiers système ---
+.DS_Store
+Thumbs.db
